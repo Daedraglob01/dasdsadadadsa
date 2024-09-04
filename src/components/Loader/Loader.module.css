@@ -1,0 +1,15 @@
+.loaderWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Центрирует по вертикали на всей высоте видимой области */
+    margin: 0;
+  }
+  
+  .loaderWrapper::after {
+    content: "Loading...";
+    font-size: 16px;
+    color: #ffffff;
+    margin-top: 10px;
+  }
+  

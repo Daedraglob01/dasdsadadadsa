@@ -1,0 +1,106 @@
+@import url("./reset.css");
+@import url("@fontsource/inter-tight/400.css");
+@import url("@fontsource/inter-tight/500.css");
+@import url("@fontsource/inter-tight/600.css");
+
+:root {
+  font-family: 'Inter Tight', system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color-scheme: light dark;
+  color: #f5f5f5;
+  background-color: #121212;
+}
+
+body {
+  font-family: 'Inter Tight', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 500;
+  color: var(--text-color);
+}
+
+input {
+  color: #333;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 10px 16px;
+  outline: none;
+  width: 100%;
+  font-size: 16px;
+}
+
+h1 {
+  font-size: 2.25rem;
+  text-align: center;
+  font-weight: 600;
+  color: var(--text-color);
+}
+
+h2 {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: var(--text-color);
+}
+
+button {
+  cursor: pointer;
+  color: #333;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: 600;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+  background-color: #f0f0f0;
+}
+
+button:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.3);
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background-color: #fff;
+  color: #333;
+  padding: 24px;
+  border-radius: 10px;
+  margin: 24px 0;
+}
+
+.sub-card {
+  padding: 16px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #fafafa;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 16px;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+    padding: 32px;
+  }
+}
